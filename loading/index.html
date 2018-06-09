@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="logo">Loading</div>
+		<div class="dots animate">
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+
+		setInterval(function () {
+			$('.dots').removeClass('animate');
+			setTimeout(function () {
+				$('.dots').addClass('animate');
+			}, 200)
+		}, 4000)
+		console.log(0);
+	</script>
+
+</body>
+</html>
